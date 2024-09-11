@@ -78,14 +78,6 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
                            tuple(np.multiply(target, [660, 480]).astype(int)), 
                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA
                                 )
-
-            # # Curl counter logic
-            # if angle > 160:
-            #     stage = "down"
-            # if angle < 30 and stage =='down':
-            #     stage="up"
-            #     counter +=1
-            #     print(counter)
  
         except:
             pass
